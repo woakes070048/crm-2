@@ -8,19 +8,21 @@ My idea with this app is to build a brand-new CRM that looks great and has all t
 ** THIS APP IS IN HEAVY DEVELOPMENT, THIS IS NOT A "PUBLIC" RELEASE BY ANY STRETCH OF THE IMAGINATION. **
 
 ## 1.1 CONTENTS
-* 1.0 INTRO + WELCOME
-* 1.1 CONTENTS
-* 1.2 SYSTEM REQUIREMENTS
-* 1.3 INSTALLATION
-* 2.0 DOCUMENTATION
-* 2.1 CONCEPTS
-* 2.2 DESIGN LANGUAGE
-* 2.3 DEVELOPMENT LANGUAGE
-* 2.4 DIRECTORY STRUCTURE
-* 2.4 DATABASE STRUCTURE
-* 3.0 KNOWN ISSUES
-* 3.1 ROADMAP
-* 3.2 LICENSE
+* 1.0   INTRO + WELCOME
+* 1.1   CONTENTS
+* 1.2   SYSTEM REQUIREMENTS
+* 1.3   INSTALLATION
+* 2.0   DOCUMENTATION
+* 2.1   CONCEPTS
+* 2.2   DESIGN LANGUAGE
+* 2.3   DEVELOPMENT LANGUAGE
+* 2.4   DIRECTORY STRUCTURE
+* 2.4.1 FOLDERS
+* 2.4.2 FILES
+* 2.4.3 DATABASE
+* 3.0   KNOWN ISSUES
+* 3.1   ROADMAP
+* 3.2   LICENSE
 
 ## 1.2  SYSTEM REQUIREMENTS
 Current system requirements are:
@@ -48,17 +50,17 @@ Better and more complete documentation will be added once rapid development has 
 ## 2.1  CONCEPTS
 The app is built to play off of the "Person, Place, Thing" idea. These 3 core areas along with "Tasks" are the central focus of a CRM if you really boil them down to their core. The top main menu provides access to each area, then displays simple context-sensitive actions next to the page title to either create a new item, delete, or edit an existing item.
 
-* Tasks - These are all the items you need to complete. Tasks can be either be a one-off service ticket, or a project that consists of a bunch of individual tasks. (You may call them "Projects, Service Tickets, To-Dos")
+* __Tasks__ - These are all the items you need to complete. Tasks can be either be a one-off service ticket, or a project that consists of a bunch of individual tasks. (You may call them "Projects, Service Tickets, To-Dos")
 
-* People- Contacts within your app. People are physical human beings and can be associated with one or more places that they work with or associate with. (You may call them "Contacts, Leads, Prospects")
+* __People__- Contacts within your app. People are physical human beings and can be associated with one or more places that they work with or associate with. (You may call them "Contacts, Leads, Prospects")
 
-* Places - locations, either a business or company, or a location of interest such as a meeting location. (You may call them "Companies, Vendors")
+* __Places__ - locations, either a business or company, or a location of interest such as a meeting location. (You may call them "Companies, Vendors")
 
-* Money - All your business finances consisting of invoices, expenses, quotes/proposals, and other money that is coming or going. (You may call them "Invoices, Expenses, Quotes, Proposals")
+* __Money__ - All your business finances consisting of invoices, expenses, quotes/proposals, and other money that is coming or going. (You may call them "Invoices, Expenses, Quotes, Proposals")
 
-* Times - Time frames such as the amount of time worked on a task, a meeting time, or a calendar appointment. (You may call them "Timesheets, ClockIn, Clock Out, In/Out Boards, Calendars, Meetings")
+* __Times__ - Time frames such as the amount of time worked on a task, a meeting time, or a calendar appointment. (You may call them "Timesheets, ClockIn, Clock Out, In/Out Boards, Calendars, Meetings")
 
-* Things - Everything else. They can be configuration records, products and other reusable assets to your business. (You may call them "Vendors, Products, Services, Configurations")
+* __Things__ - Everything else. They can be configuration records, products and other reusable assets to your business. (You may call them "Vendors, Products, Services, Configurations")
 
 ## 2.2  DESIGN LANGUAGE
 An elegant interface is a key component to this system. Leveraging Bootstrap for the time being, the UI is heavily inspired by Google Material Design Language with a Card-Based Layout rather than the usual table-based layouts.
@@ -68,10 +70,10 @@ The new Bootstrap components consist of "card-list" and "card-open" which change
 ## 2.3  DEVELOPMENT LANGUAGE
 The App is developed in PHP/MySQL utilizing the Laravel application and dependencies, for the time being. Coding practices will be fairly standard, although for the moment it might not appear that way. Currently, you may find in-line CSS, and embedded scripts for temporary development purposes only. Proper commenting has also not been done at the time of this writing but is definitely a top item for me to complete.
 
-## 2.4  DIRECTORY STRUCTURE
+## 2.4  STRUCTURE
 The app is built using Laravel structure which follows an MVC inspired structure. For those unfamiliar, the essential parts of the folder structure are:
 
-### Folders
+### 2.4.1  FOLDERS
 * `/` – The root directory which contains all other folders for the app
 * `/app` – Contains Models
 * `/resources/views` – Contains the Views
@@ -79,14 +81,14 @@ The app is built using Laravel structure which follows an MVC inspired structure
 * `/database/migrations` – Contains the database schema that will be written upon install using `php artisan migrate`
 * `/public` – Contains the front-end code, assets, and media
 
-### Files
+### 2.4.2  FILES
 * `/routes/web.php` – Contains the routes within the app
 * `/.env` – Contains the core configuration file for development. The values in here will overwrite the values within the config directory
 * `/config` – Contains configuration files (overwritten by /.env file listed in the root)
 
 Personally, I prefer having less "root" folders. I would like to change some of these application folders around in the future, if desired.
 
-## 2.4 DATABASE STRUCTURE
+### 2.4.3  DATABASE
 The database structure has been moved to an XLS spreadsheet contained in the docs directory that shows the database structure as well as samples of the data within the columns. This will be updated as often as possible, but may not be kept up-to-date with most recent database changes.
 
 ## 3.0  KNOWN ISSUES
@@ -121,15 +123,15 @@ The roadmap is a look at things to come. As the app develops, these are the feat
 
 ## 3.1  CREDITS
 Built with the following assets:
-- Laravel: [https://laravel.com/](https://laravel.com)
-- Laravel Collective Forms: [https://laravelcollective.com/](https://laravelcollective.com/)
-- Bootstrap 4: [https://v4-alpha.getbootstrap.com/](https://v4-alpha.getbootstrap.com/)
-- Select2: [https://select2.github.io/](https://select2.github.io/)
-- Google Material Design: [https://material.io/](https://material.io/)
+- __Laravel__: [https://laravel.com/](https://laravel.com)
+- __Laravel Collective Forms__: [https://laravelcollective.com/](https://laravelcollective.com/)
+- __Bootstrap 4__: [https://v4-alpha.getbootstrap.com/](https://v4-alpha.getbootstrap.com/)
+- __Select2__: [https://select2.github.io/](https://select2.github.io/)
+- __Google Material Design__: [https://material.io/](https://material.io/)
 - And Viewers like you!
 
-Author: Christopher Martone: [http://christophermartone.com](http://christophermartone.com)
-Publisher: Starcresc Interactive: [http://starcresc.com](http://starcresc.com)
+__Author__: Christopher Martone: [http://christophermartone.com](http://christophermartone.com)
+__Publisher__: Starcresc Interactive: [http://starcresc.com](http://starcresc.com)
 
 ## 3.2  LICENSE
 This app is provided "AS IS" and is not intended for use in a production environment. Many areas are still in rapid development and the database schema has not been finalized. This app is provided freely for use and welcome any user contributions to its code base. Under no circumstances is it provided with any warranty expressed or implied by either the Author or the Publisher. (C) Copyright 2017 Starcresc. (C) Copyright 2017 Christopher Martone. All Rights Reserved.
