@@ -1,7 +1,7 @@
 # StarStation (Codename: "CRM")
 Welcome to StarStation; a new CRM that focuses on efficiency, modern technologies, and awesome design to let you manage your business more effectively. Assistance is more than welcome and appreciated. Let's build something awesome :-)
 
-I started building this application after disappointment with the apps currently on the market. The biggest apps out there are big, bloated, have a huge learning curve, and downright disgusting UIs that made me sick to my stomach. Some are web based, but others require downlading companion apps and installing various programs to run. Other apps do one or two items related to a CRM but leave out the crucial pieces or hide them behind a paywall.
+I started building this application after disappointment with the apps currently on the market. The biggest apps out there are big, bloated, have a huge learning curve with downright disgusting interfaces that made me sick to my stomach. Some are web-based, but others require downlading companion apps and installing various companion programs to run. Other apps do one or two items related to a CRM but leave out the crucial pieces or hide them behind a paywall.
 
 My idea with this app is to build a brand-new CRM that looks great and has all the functionality you would need to run a business, ideally for an IT business such as technical support or a project-based business such as web design or development. The goal is that it can eventually evolve into an app that suits many tastes but remains simple in nature.
 
@@ -15,7 +15,8 @@ My idea with this app is to build a brand-new CRM that looks great and has all t
 * 2.0 DOCUMENTATION
 * 2.1 CONCEPTS
 * 2.2 DESIGN LANGUAGE
-* 2.3 DIRECTORY STRUCTURE
+* 2.3 DEVELOPMENT LANGUAGE
+* 2.4 DIRECTORY STRUCTURE
 * 2.4 DATABASE STRUCTURE
 * 3.0 KNOWN ISSUES
 * 3.1 ROADMAP
@@ -33,6 +34,7 @@ Current system requirements are:
 - Supports all modern browsers and IE 9+. Support across devices/screen sizes, but currently only optimized for desktops.
 
 ## 1.3  INSTALLATION
+0.  THIS WILL BE SORTED OUT OVER THE WEEKEND, CURRENT INSTALL DIRECTIONS BELOW DO NOT WORK.
 1.  Download and install Laravel 5.4.x per the installation guide: https://laravel.com/docs/5.4/installation
 2.  Configure the application with a .env file or otherwise configure to connect to a database per: https://laravel.com/docs/5.4/configuration
 3.  Overwrite all core files with those provided from our GitHub: https://github.com/chris985/crm by downloading the repository and extracting to the root Laravel folder
@@ -44,7 +46,7 @@ Current system requirements are:
 Better and more complete documentation will be added once rapid development has ceased.
 
 ## 2.1  CONCEPTS
-The app is built to play off of the "Person, Place, Thing" idea. These 3 core areas along with "Tasks" are the central focus of a CRM if you really boil them down to their core. The top main menu provides access to each area, then displays simple context-sensative actions next to the page title to either create a new item, delete, or edit an existing item.
+The app is built to play off of the "Person, Place, Thing" idea. These 3 core areas along with "Tasks" are the central focus of a CRM if you really boil them down to their core. The top main menu provides access to each area, then displays simple context-sensitive actions next to the page title to either create a new item, delete, or edit an existing item.
 
 * Tasks - These are all the items you need to complete. Tasks can be either be a one-off service ticket, or a project that consists of a bunch of individual tasks. (You may call them "Projects, Service Tickets, To-Dos")
 
@@ -59,27 +61,30 @@ The app is built to play off of the "Person, Place, Thing" idea. These 3 core ar
 * Things - Everything else. They can be configuration records, products and other reusable assets to your business. (You may call them "Vendors, Products, Services, Configurations")
 
 ## 2.2  DESIGN LANGUAGE
-A proper system UI is a key component to the system. Leveraging Bootstrap for the time being, the UI is heavily inspired by Google Material Design Language with a Card Based Layout rather than the usual table-based layouts.
+An elegant interface is a key component to this system. Leveraging Bootstrap for the time being, the UI is heavily inspired by Google Material Design Language with a Card-Based Layout rather than the usual table-based layouts.
 
 The new Bootstrap components consist of "card-list" and "card-open" which change the look of Bootstrap cards.
 
-## 2.3  DIRECTORY STRUCTURE
+## 2.3  DEVELOPMENT LANGUAGE
+The App is developed in PHP/MySQL utilizing the Laravel application and dependencies, for the time being. Coding practices will be fairly standard, although for the moment it might not appear that way. Currently, you may find in-line CSS, and embedded scripts for temporary development purposes only. Proper commenting has also not been done at the time of this writing but is definitely a top item for me to complete.
+
+## 2.4  DIRECTORY STRUCTURE
 The app is built using Laravel structure which follows an MVC inspired structure. For those unfamiliar, the essential parts of the folder structure are:
 
 ### Folders
-* / – The root directory which contains all other folders for the app
-* /app – Contains Models
-* /resources/views – Contains the Views
-* /app/Http/Controllers - Contains Controllers
-* /database/migrations – Contains the database schema that will be written upon install
-* /public – Contains the front-end code, assets, and media
+* `/` – The root directory which contains all other folders for the app
+* `/app` – Contains Models
+* `/resources/views` – Contains the Views
+* `/app/Http/Controllers` - Contains Controllers
+* `/database/migrations` – Contains the database schema that will be written upon install using `php artisan migrate`
+* `/public` – Contains the front-end code, assets, and media
 
 ### Files
-* /routes/web.php – Contains the routes within the app
-* /.env – Contains the core configuration file for development. The values in here will overwrite the values within the config directory
-* /config – Contains configuration files (overwritten by /.env file listed in the root)
+* `/routes/web.php` – Contains the routes within the app
+* `/.env` – Contains the core configuration file for development. The values in here will overwrite the values within the config directory
+* `/config` – Contains configuration files (overwritten by /.env file listed in the root)
 
-Personally, I prefer having less "root" folders. I would like to change some of these application folders around in the future.
+Personally, I prefer having less "root" folders. I would like to change some of these application folders around in the future, if desired.
 
 ## 2.4 DATABASE STRUCTURE
 The database structure has been moved to an XLS spreadsheet contained in the docs directory that shows the database structure as well as samples of the data within the columns. This will be updated as often as possible, but may not be kept up-to-date with most recent database changes.
