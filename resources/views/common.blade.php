@@ -133,7 +133,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-item dropdown-toggle mr-3" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="rounded-circle" width="40" height="40" src="https://scontent-ort2-1.xx.fbcdn.net/v/l/t1.0-9/12122722_1345515872132684_5764190398574559097_n.jpg?oh=078ebbdb80167cfe248a1b4fc746cfd0&oe=590DB601" alt=""></a>
+                    <a class="nav-item dropdown-toggle mr-3" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="rounded-circle" width="40" height="40" src="https://randomuser.me/api/portraits/men/5.jpg" alt=""></a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item text-muted" href="#"><i class="fa fa-user fa-fw"></i>&nbsp;Profile</a>
                         <a class="dropdown-item text-muted" href="#"><i class="fa fa-gear fa-fw"></i>&nbsp;Settings</a>
