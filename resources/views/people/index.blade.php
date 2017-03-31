@@ -20,6 +20,7 @@ People
 </div>
 @endif
 <div class="card-list">
+    @if(!$people->isEmpty())
     @foreach ($people as $key => $person)
     <article class="card">
         <div class="card-block row align-items-center">
@@ -55,8 +56,17 @@ People
         </div>
     </article>
     @endforeach
-    <div class="py-3 px-3">
-        {!! $people->links() !!}
+    @else
+    <divclass="card">
+    <div class="card-block row align-items-center">
+        <p>No results found</p>
     </div>
+</div>
+@endif
+<div class="py-3 px-3">
+    {!! $people->links() !!}
+</div>
+
+
 </div>
 @endsection

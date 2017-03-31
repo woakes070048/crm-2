@@ -26,3 +26,7 @@ Route::resource('places','PlaceController');
 
 //Money
 Route::resource('money','MoneyController');
+
+//Search
+Route::get('globalsearch', 'SearchController@index');
+Route::get('globalsearch-autocomplete', 'SearchController@autocomplete');

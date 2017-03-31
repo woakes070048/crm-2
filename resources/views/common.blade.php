@@ -191,9 +191,9 @@
     </div>
     @endif
     @hasSection('js')
-    <script type="text/javascript">
+
         @yield('js')
-    </script>
+
     @endif
 </body>
 </html>
