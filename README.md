@@ -16,6 +16,7 @@ My idea with this app is to build a brand-new CRM that looks great and has all t
 * 2.1 CONCEPTS
 * 2.2 DESIGN LANGUAGE
 * 2.3 DIRECTORY STRUCTURE
+* 2.4 DATABASE STRUCTURE
 * 3.0 KNOWN ISSUES
 * 3.1 ROADMAP
 * 3.2 LICENSE
