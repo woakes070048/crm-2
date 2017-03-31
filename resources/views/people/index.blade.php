@@ -57,16 +57,14 @@ People
     </article>
     @endforeach
     @else
-    <divclass="card">
-    <div class="card-block row align-items-center">
-        <p>No results found</p>
+    <div class="card">
+        <div class="card-block row align-items-center">
+            <p>No results found</p>
+        </div>
     </div>
-</div>
-@endif
-<div class="py-3 px-3">
-    {!! $people->links() !!}
-</div>
-
-
+    @endif
+    <div class="py-3 px-3">
+        {!! $people->links() !!}
+    </div>
 </div>
 @endsection

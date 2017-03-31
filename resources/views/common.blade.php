@@ -110,7 +110,7 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#topnav">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-brand mr-auto"><a href="#"><i class="fa fa-bars fa-fw mr-1"></i>Station</a></div>
+        <div class="navbar-brand mr-auto"><a href="{{ route('index') }}"><i class="fa fa-bars fa-fw mr-1"></i>Station</a></div>
         <div class="collapse navbar-collapse" id="topnav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="{{ route('tasks.index') }}"><i class="fa fa-leaf fa-fw"></i>&nbsp;Tasks</a></li>
@@ -133,13 +133,13 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-item dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="rounded-circle" width="40" height="40" src="https://scontent-ort2-1.xx.fbcdn.net/v/l/t1.0-9/12122722_1345515872132684_5764190398574559097_n.jpg?oh=078ebbdb80167cfe248a1b4fc746cfd0&oe=590DB601" alt=""></a>
+                    <a class="nav-item dropdown-toggle mr-3" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="rounded-circle" width="40" height="40" src="https://scontent-ort2-1.xx.fbcdn.net/v/l/t1.0-9/12122722_1345515872132684_5764190398574559097_n.jpg?oh=078ebbdb80167cfe248a1b4fc746cfd0&oe=590DB601" alt=""></a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#"><i class="fa fa-user fa-fw"></i>&nbsp;Profile</a>
-                        <a class="dropdown-item" href="#"><i class="fa fa-gear fa-fw"></i>&nbsp;Settings</a>
-                        <a class="dropdown-item" href="#"><i class="fa fa-question-circle fa-fw"></i>&nbsp;Help</a>
+                        <a class="dropdown-item text-muted" href="#"><i class="fa fa-user fa-fw"></i>&nbsp;Profile</a>
+                        <a class="dropdown-item text-muted" href="#"><i class="fa fa-gear fa-fw"></i>&nbsp;Settings</a>
+                        <a class="dropdown-item text-muted" href="#"><i class="fa fa-question-circle fa-fw"></i>&nbsp;Help</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#"><i class="fa fa-sign-out fa-fw"></i>&nbsp;Logout</a>
+                        <a class="dropdown-item text-muted" href="{{ route('logout') }}"><i class="fa fa-sign-out fa-fw"></i>&nbsp;Logout</a>
                     </div>
                 </li>
                 <li class="nav-item">

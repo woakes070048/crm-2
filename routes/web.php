@@ -12,8 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-})->name('index');
+	return view('index'); 
+})->name('index')->middleware('auth');;
 
 //Money
 Route::resource('tasks','TaskController');
@@ -30,3 +30,10 @@ Route::resource('money','MoneyController');
 //Search
 Route::get('globalsearch', 'SearchController@index');
 Route::get('globalsearch-autocomplete', 'SearchController@autocomplete');
+
+//Auth
+Auth::routes();
+Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+Route::get('/home', 'HomeController@index');
+
