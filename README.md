@@ -130,8 +130,8 @@ Built with the following assets:
 - __Google Material Design__: [https://material.io/](https://material.io/)
 - And Viewers like you!
 
-__Author__: Christopher Martone: [http://christophermartone.com](http://christophermartone.com)
-__Publisher__: Starcresc Interactive: [http://starcresc.com](http://starcresc.com)
+- __Author__: Christopher Martone: [http://christophermartone.com](http://christophermartone.com)
+- __Publisher__: Starcresc Interactive: [http://starcresc.com](http://starcresc.com)
 
 ## 3.2  LICENSE
 This app is provided "AS IS" and is not intended for use in a production environment. Many areas are still in rapid development and the database schema has not been finalized. This app is provided freely for use and welcome any user contributions to its code base. Under no circumstances is it provided with any warranty expressed or implied by either the Author or the Publisher. (C) Copyright 2017 Starcresc. (C) Copyright 2017 Christopher Martone. All Rights Reserved.
