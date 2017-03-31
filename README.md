@@ -1,6 +1,8 @@
 # StarStation (Codename: "CRM")
 Welcome to StarStation; a new CRM that focuses on efficiency, modern technologies, and awesome design to let you manage your business more effectively. Assistance is more than welcome and appreciated. Let's build something awesome :-)
 
+![Screenshot](http://i.imgur.com/WiT4ezj.jpg "Screenshot")
+
 I started building this application after disappointment with the apps currently on the market. The biggest apps out there are big, bloated, have a huge learning curve with downright disgusting interfaces that made me sick to my stomach. Some are web-based, but others require downlading companion apps and installing various companion programs to run. Other apps do one or two items related to a CRM but leave out the crucial pieces or hide them behind a paywall.
 
 My idea with this app is to build a brand-new CRM that looks great and has all the functionality you would need to run a business, ideally for an IT business such as technical support or a project-based business such as web design or development. The goal is that it can eventually evolve into an app that suits many tastes but remains simple in nature.
