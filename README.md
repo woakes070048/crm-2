@@ -131,7 +131,6 @@ Built with the following assets:
 - And Viewers like you!
 
 __Author__: Christopher Martone: [http://christophermartone.com](http://christophermartone.com)
-
 __Publisher__: Starcresc Interactive: [http://starcresc.com](http://starcresc.com)
 
 ## 3.2  LICENSE
